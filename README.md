@@ -139,7 +139,7 @@ make LANGUAGES=c CFLAGS=-O CC="gcc -m64" install
 
 Open file ```cache.h```
 - After line 105, add ```LFU``` in ```enum cache_policy{}``` function
-- Ater line 124, add ```unsigned int lfu_count; /* count how many times this block was accessed */```
+- After line 124, add ```unsigned int lfu_count; /* count how many times this block was accessed */```
 
 Now open file ```cache.c```
 - After line 398, add ```blk->lfu_count = 0;```
